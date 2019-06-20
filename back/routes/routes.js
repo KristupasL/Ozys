@@ -13,7 +13,7 @@ router.get('/', (request, response) => {
         timestamp: new Date().getTime()
     })
 })
-// 
+//
 // router.route('/comment')
 //     .post(commentController.comment)
 //
@@ -23,13 +23,13 @@ router.get('/', (request, response) => {
 // router.route('/like')
 //     .post(postController.like)
 //
-// router.route('/register')
-//     .post(userController.register)
-//
-// router.route('/login')
-//     .post(userController.login)
-//
-// router.route('/logout')
-//     .get(middleware.authenticate, userController.logout)
+router.route('/register')
+    .post(userController.register)
+
+router.route('/login')
+    .post(userController.login)
+
+router.route('/logout')
+    .get(middleware.authenticate, userController.logout)
 
 module.exports = router
