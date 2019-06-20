@@ -12,9 +12,15 @@ I. Back-end:
     7. User Logout @kristupas DONE
     8. Password repeat verification
     9. Check if email is legit (@ includes)
+<<<<<<< HEAD
+    10. User Model
+    11. Comment Model @Modestas
+    12. Post Model @Modestas
+=======
     10. User Model DONE
     11. Comment Model @Modestas DONE
     12. Post Model
+>>>>>>> e02f7e50014f9ea13cf591b3865d48c4da0b30fa
 
     13. Feed load
     14. Photo posting
