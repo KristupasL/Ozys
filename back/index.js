@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
@@ -29,4 +26,3 @@ app.use(bodyParser.json())
 app.use('/api', apiRouter)
 
 app.listen(3000)
->>>>>>> 09b721c70d6e61bd979ee4fe2845c0600933c0eb
