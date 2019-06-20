@@ -13,23 +13,23 @@ router.get('/', (request, response) => {
         timestamp: new Date().getTime()
     })
 })
-
-router.route('/comment')
-    .post(commentController.comment)
-
-router.route('/post')
-    .post(postController.post)
-
-router.route('/like')
-    .post(postController.like)
-
-router.route('/register')
-    .post(userController.register)
-
-router.route('/login')
-    .post(userController.login)
-
-router.route('/logout')
-    .get(middleware.authenticate, userController.logout)
+// 
+// router.route('/comment')
+//     .post(commentController.comment)
+//
+// router.route('/post')
+//     .post(postController.post)
+//
+// router.route('/like')
+//     .post(postController.like)
+//
+// router.route('/register')
+//     .post(userController.register)
+//
+// router.route('/login')
+//     .post(userController.login)
+//
+// router.route('/logout')
+//     .get(middleware.authenticate, userController.logout)
 
 module.exports = router
