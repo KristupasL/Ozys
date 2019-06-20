@@ -9,7 +9,6 @@ let CommentSchema = new mongoose.Schema({
     post: {
         type: mongoose.Schema.Types.ObjectId,
         required: true
-
     },
     comment: {
         type: String,
