@@ -17,8 +17,8 @@ router.get('/', (request, response) => {
 // router.route('/comment')
 //     .post(commentController.comment)
 //
-// router.route('/post')
-//     .post(postController.post)
+router.route('/post')
+    .post(middleware.authenticate, postController.createPost)
 //
 // router.route('/like')
 //     .post(postController.like)

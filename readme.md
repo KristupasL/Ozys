@@ -10,11 +10,11 @@ I. Back-end:
     5. User Register @kristupas DONE
     6. User Login @kristupas DONE
     7. User Logout @kristupas DONE
-    8. Password repeat verification
-    9. Check if email is legit (@ includes)
-    10. User Model DONE
+    8. Password repeat verification ?
+    9. Check if email is legit (@ includes) ?
+    10. User Model @Tautvydas DONE
     11. Comment Model @Modestas DONE
-    12. Post Model
+    12. Post Model @kristupas DONE
 
     13. Feed load
     14. Photo posting

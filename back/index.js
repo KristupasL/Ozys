@@ -12,7 +12,7 @@ mongoose.connect("mongodb://localhost:27017/ozys", {
     useNewUrlParser: true
 })
 
-let corsOptions = {
+var corsOptions = {
     exposedHeaders: ["x-auth"]
 };
 

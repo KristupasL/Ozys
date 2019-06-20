@@ -8,7 +8,7 @@ let authenticate = (req, res, next) => {
     let token = req.header('x-auth')
     let decoded;
     try {
-        decoded = jwt.verify(token, secretSalt)
+        decoded = jwt.verify(token, superSec)
         User.findOne({
             _id: decoded._id,
             "tokens.access": "auth",
