@@ -1,0 +1,27 @@
+.topbar {
+  width: 100%;
+  position: fixed;
+  top : 0;
+  left: 0;
+  z-index: 999;
+  background-color: blue;
+  /* -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; */
+}
+
+.nav-bar {
+  background-color: green;
+  height: 50px;
+
+}
+
+.left {
+  float: left;
+  line-height: 50px;
+}
+
+.right {
+  float: right;
+  line-height: 50px;
+}
