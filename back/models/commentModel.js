@@ -15,6 +15,17 @@ let CommentSchema = new mongoose.Schema({
         type: String,
         required: true
 
+<<<<<<< HEAD
+=======
+  },
+  likes: [{
+    like: {
+      type: String,
+      required: true
+      // required: true
+
+
+>>>>>>> a07f3d14b94748f9235665b60619d24e2f45d3e8
     },
     likes: {
         type: Number,
