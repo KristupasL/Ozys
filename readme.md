@@ -24,7 +24,7 @@ I. Back-end:
 II. Front-end:
 
     1. Colors, Header, and general design ideas that will be implemented in pages below
-    2. Register Page
+    2. Register Page - @pasha
     3. Login Page
     4. Main/Feed Page
     5. Profile Page
