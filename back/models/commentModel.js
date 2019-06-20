@@ -21,6 +21,9 @@ let CommentSchema = new mongoose.Schema({
     like: {
       type: String,
       required: true
+      // required: true
+
+
     },
     user: {
       type: String,
