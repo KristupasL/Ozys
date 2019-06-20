@@ -2,26 +2,29 @@ Tasks:
 
 I. Back-end:
 
-    1. Setup index.js
-    2. Add routes
-    3. setup config
-    4. setup middleware
+    1. Setup index.js - @kristupas
+    2. Add routes - @kristupas
+    3. setup config @kristupas
+    4. setup middleware @kristupas
 
     5. User Register
     6. User Login
     7. User Logout
     8. Password repeat verification
     9. Check if email is legit (@ includes)
+    10. User Model
+    11. Comment Model @Modestas
+    12. Post Model
 
-    10. Feed load
-    11. Photo posting
-    12. Liking a Photo
-    13. Commenting a photo
+    13. Feed load
+    14. Photo posting
+    15. Liking a Photo
+    16. Commenting a photo
 
 II. Front-end:
 
     1. Colors, Header, and general design ideas that will be implemented in pages below
-    2. Register Page
+    2. Register Page - @pasha
     3. Login Page
     4. Main/Feed Page
     5. Profile Page
