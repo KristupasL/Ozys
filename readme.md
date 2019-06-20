@@ -14,7 +14,7 @@ I. Back-end:
     9. Check if email is legit (@ includes)
     10. User Model
     11. Comment Model @Modestas
-    12. Post Model
+    12. Post Model @Modestas
 
     13. Feed load
     14. Photo posting
