@@ -13,7 +13,7 @@ I. Back-end:
     8. Password repeat verification
     9. Check if email is legit (@ includes)
     10. User Model
-    11. Comment Model
+    11. Comment Model @Modestas
     12. Post Model
 
     13. Feed load
