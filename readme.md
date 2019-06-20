@@ -2,19 +2,25 @@ Tasks:
 
 I. Back-end:
 
-    1. Setup index.js - @kristupas
-    2. Add routes - @kristupas
-    3. setup config @kristupas
-    4. setup middleware @kristupas
+    1. Setup index.js - @kristupas DONE
+    2. Add routes - @kristupas DONE
+    3. setup config @kristupas DONE
+    4. setup middleware @kristupas DONE
 
-    5. User Register
-    6. User Login
-    7. User Logout
+    5. User Register @kristupas DONE
+    6. User Login @kristupas DONE
+    7. User Logout @kristupas DONE
     8. Password repeat verification
     9. Check if email is legit (@ includes)
+<<<<<<< HEAD
     10. User Model
     11. Comment Model @Modestas
+    12. Post Model @Modestas
+=======
+    10. User Model DONE
+    11. Comment Model @Modestas DONE
     12. Post Model
+>>>>>>> e02f7e50014f9ea13cf591b3865d48c4da0b30fa
 
     13. Feed load
     14. Photo posting

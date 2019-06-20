@@ -13,16 +13,16 @@ router.get('/', (request, response) => {
         timestamp: new Date().getTime()
     })
 })
-
-router.route('/comment')
-    .post(commentController.comment)
-
-router.route('/post')
-    .post(postController.post)
-
-router.route('/like')
-    .post(postController.like)
-
+//
+// router.route('/comment')
+//     .post(commentController.comment)
+//
+// router.route('/post')
+//     .post(postController.post)
+//
+// router.route('/like')
+//     .post(postController.like)
+//
 router.route('/register')
     .post(userController.register)
 
