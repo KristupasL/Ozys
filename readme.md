@@ -16,10 +16,10 @@ I. Back-end:
     11. Comment Model
     12. Post Model
 
-    10. Feed load
-    11. Photo posting
-    12. Liking a Photo
-    13. Commenting a photo
+    13. Feed load
+    14. Photo posting
+    15. Liking a Photo
+    16. Commenting a photo
 
 II. Front-end:
 
