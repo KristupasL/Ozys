@@ -8,19 +8,19 @@ const apiRouter = require("./routes/routes");
 const app = express();
 
 mongoose.connect("mongodb://localhost:27017/ozys", {
-  useCreateIndex: true,
-  useNewUrlParser: true
+    useCreateIndex: true,
+    useNewUrlParser: true
 });
 
-let corsOptions = {
-  exposedHeaders: ["x-auth"]
+var corsOptions = {
+    exposedHeaders: ["x-auth"]
 };
 
 app.use(cors(corsOptions));
 app.use(
-  bodyParser.urlencoded({
-    extended: true
-  })
+    bodyParser.urlencoded({
+        extended: true
+    })
 );
 app.use(bodyParser.json());
 
