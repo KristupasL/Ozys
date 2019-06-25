@@ -15,10 +15,10 @@ I. Back-end:
     9. Check if email is legit (@ includes) ?
     10. User Model @Tautvydas DONE
     11. Comment Model @Modestas DONE
-    12. Post Model @kristupas DONEq
+    12. Post Model @kristupas DONE
 
     13. Feed load
-    14. Photo posting
+    14. Photo posting @kristupas DONE
     15. Liking a Photo
     16. Commenting a photo
 

@@ -5,10 +5,8 @@ let createPost = (req, res) => {
     let post = new PostModel()
     post.photo = data.photo
     post.creator = req.user._id
-    post.likesCount = 0
     post.title = data.title
-    post.commentsCount = 0
-    post.date = new Date()
+
 
     post.save()
         .then((item => {
