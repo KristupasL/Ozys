@@ -3,16 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <title>Register</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link onkeypress=""rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style/topbar.css">
     <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
     <div class="topbar">
+      <div class="container">
+        <nav class="nav-bar left">
+          <span class="logo">OZYS</span>
+         </nav>
+        <nav class="nav-bar right">
+          <div class="item">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+          <button type="button" name="button" class="btn login" id="logout">Log out</button>
+        </nav>
+      </div>
+    </div>
+    <!-- <div class="topbar">
       <div class="container">
         <nav class="nav-bar left">
           <span>LOGO</span>
@@ -20,18 +32,8 @@
         <nav class="nav-bar right">
           <div class="item">
             <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
           <div class="item">
@@ -41,7 +43,7 @@
           </div>
         </nav>
       </div>
-    </div>
+    </div> -->
 
     // SITAM BUS SEARCHAS IR DIDELIS KONTEINERIS, KURIAME BUS DAR VIENAS
     KONTEINERIS
