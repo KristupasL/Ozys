@@ -2,7 +2,6 @@ function loginUser() {
   let uName = document.getElementById("userName").value;
   let pass = document.getElementById("password").value;
 
-  alert('here');
   fetch('http://localhost:3000/api/login', {
       method: 'POST',
       headers: {
@@ -26,6 +25,7 @@ function loginUser() {
     })
 
 }
+
 document.getElementById('login').addEventListener('click', () => loginUser());
 
 document.getElementById('register').addEventListener('click', () => {
