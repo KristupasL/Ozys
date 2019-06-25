@@ -32,4 +32,7 @@ router.route('/login')
 router.route('/logout')
     .get(middleware.authenticate, userController.logout)
 
+router.route('/feedLoad')
+    .get(middleware.authenticate, feedController.feedLoad)
+
 module.exports = router
