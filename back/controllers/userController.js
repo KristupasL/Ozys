@@ -28,7 +28,7 @@ let login = (req, res) => {
         })
         .then(user => {
             if (!user) {
-                res.json("No user with this username");
+                res.status(400).json("No user with this username");
                 return;
             }
             bcrypt.compare(data.password, user.password, (err, response) => {
@@ -50,7 +50,7 @@ let login = (req, res) => {
                         res.header("x-auth", token).json(useris);
                     });
                 } else {
-                    res.json("incorrect password");
+                    res.status(400).json("incorrect password");
                 }
             });
         })
