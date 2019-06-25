@@ -3,15 +3,16 @@
   position: fixed;
   top : 0;
   left: 0;
+  padding: 0 10px;
   z-index: 999;
-  background-color: blue;
+  background-color: #e1e1e1;
   /* -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; */
 }
 
 .nav-bar {
-  background-color: green;
+  /* background-color: green; */
   height: 50px;
 
 }
@@ -26,8 +27,18 @@
   line-height: 50px;
 }
 
+.logo {
+  font-weight: 800;
+  letter-spacing: 3px
+}
 
+.login {
+  background-color: #FF8000;
+  color: #fff;
+}
 
-.registerForm {
-  margin-top: 50px;
+.login:hover {
+  color: #fff;
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }

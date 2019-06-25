@@ -1,10 +1,11 @@
 function registerUser() {
-  let userName = document.getElementById('registerUserName').value
-  let email = document.getElementById('registerEmail').value
-  let pass = document.getElementById('registerPassword').value
-  let rpass = document.getElementById('registerPassword').value
-  let photo = document.getElementById('registerPassword').value
-  let description = document.getElementById('registerDescription').value
+
+  let uName = document.getElementById('userName').value
+  let email = document.getElementById('email').value
+  let pass = document.getElementById('password').value
+  let rpass = document.getElementById('rePassword').value
+  // let photo = document.getElementById('photo').value
+  // let description = document.getElementById('description').value
 
 
   if (pass != rpass) {
@@ -20,7 +21,7 @@ function registerUser() {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        userName: userName,
+        userName: uName,
         email: email,
         password: pass
       })
@@ -33,5 +34,11 @@ function registerUser() {
     } else {
       alert(content)
     }
-  });
+  })();
 }
+
+document.getElementById('register').addEventListener('click', () => registerUser());
+
+document.getElementById('login').addEventListener('click', () => {
+  location.replace("http://localhost:8080/login.html")
+})
