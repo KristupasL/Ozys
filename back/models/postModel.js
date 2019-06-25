@@ -12,7 +12,7 @@ let PostSchema = new mongoose.Schema({
     },
     likesCount: {
         type: Number,
-        required: true
+        default: 0
     },
     title: {
         type: String,
@@ -20,11 +20,11 @@ let PostSchema = new mongoose.Schema({
     },
     commentsCount: {
         type: Number,
-        required: false
+        default: 0
     },
     date: {
         type: Date,
-        required: false
+        default: () => new Date()
     }
 })
 
