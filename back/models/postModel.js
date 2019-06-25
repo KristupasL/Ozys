@@ -14,6 +14,10 @@ let PostSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    likesList: {
+        type: Array,
+        default: []
+    },
     title: {
         type: String,
         required: false
