@@ -28,7 +28,7 @@ let login = (req, res) => {
         })
         .then(user => {
             if (!user) {
-                res.status(400).json("No user with this username");
+                res.status(401).json("No user with this username");
                 return;
             }
             bcrypt.compare(data.password, user.password, (err, response) => {
