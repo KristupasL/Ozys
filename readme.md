@@ -19,7 +19,7 @@ I. Back-end:
 
     13. Feed load @kristupas DONE
     14. Photo posting @kristupas DONE
-    15. Liking a Photo
+    15. Liking a Photo @kristupas DONE
     16. Commenting a photo
 
 II. Front-end:
@@ -28,8 +28,8 @@ II. Front-end:
     2. Register Page - @pasha DONE
     3. Login Page - @pasha DONE
     4. Main/Feed Page
-    5. Profile Page @Modestas
-    6. Settings/Edit profile Page
+    5. Profile Page @Modestas DONE 
+    6. Settings/Edit profile Page @Modestas DONE
 
 
 

@@ -15,48 +15,64 @@ let createPost = (req, res) => {
         .catch(e => res.status(400).json(e))
 }
 
-let like = (req, res) => {
-    let id = req.param('id')
+let likeOn = (postId, userId) => {
     PostModel.update({
-            _id: id,
-            likesList: {
-                $ne: req.user._id
-            }
-        }, {
-            $inc: {
-                likesCount: 1
-            },
-            $push: {
-                likesList: req.user._id
-            }
-        })
-        .then(response => {
-            res.json(response)
-        })
-        .catch(e => res.json(e))
+        _id: postId,
+        likesList: {
+            $ne: userId
+        }
+    }, {
+        $inc: {
+            likesCount: 1
+        },
+        $push: {
+            likesList: userId
+        }
+    })
 }
 
-let unlike = (req, res) => {
-    let id = req.param('id')
+let likeOff = (postId, userId) => {
     PostModel.update({
-            _id: id,
-            likesList: req.user._id
+        _id: postId,
+        likesList: userId
+    }, {
+        $inc: {
+            likesCount: -1
+        },
+        $pull: {
+            likesList: userId
+        }
+    })
+}
+
+let like = (req, res) => {
+    let id = req.param('id')
+
+    PostModel
+        .findOne({
+            _id: id
         }, {
-            $inc: {
-                likesCount: -1
-            },
-            $pull: {
-                likesList: req.user._id
+            likesList: {
+                $elemMatch: {
+                    $eq: req.user._id
+                }
             }
         })
-        .then(response => {
-            res.json(response)
+        .then(item => {
+            if (item.likesList.length) {
+                likeOff(id, req.user._id)
+                res.json(true)
+            } else {
+                likeOn(id, req.user._id)
+                res.json(false)
+            }
+
         })
         .catch(e => res.status(400).json(e))
+
 }
 
 module.exports = {
     createPost,
-    like,
-    unlike
+    like
 }

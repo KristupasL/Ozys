@@ -17,8 +17,6 @@ router.get('/', (request, response) => {
 // router.route('/comment')
 //     .post(commentController.comment)
 //
-
-
 router.route('/register')
     .post(userController.register)
 
@@ -33,9 +31,6 @@ router.route('/post')
 
 router.route('/like/:id')
     .post(middleware.authenticate, postController.like)
-
-router.route('/unlike/:id')
-    .post(middleware.authenticate, postController.unlike)
 
 router.route('/feedLoad')
     .get(middleware.authenticate, feedController.feedLoad)
