@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const UserModel = require('./userModel.js')
 
 
 let PostSchema = new mongoose.Schema({
@@ -6,10 +7,10 @@ let PostSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    creator: {
+    creator: [{
         type: mongoose.Schema.Types.ObjectId,
-        required: true
-    },
+        ref: 'Users'
+    }],
     likesCount: {
         type: Number,
         default: 0

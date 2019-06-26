@@ -37,7 +37,6 @@ router.route('/like/:id')
 router.route('/unlike/:id')
     .post(middleware.authenticate, postController.unlike)
 
-
 router.route('/feedLoad')
     .get(middleware.authenticate, feedController.feedLoad)
 
