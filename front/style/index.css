@@ -2,3 +2,34 @@
   margin-top: 70px;
   width: 100%;
 }
+
+.userSection {
+  position: relative;
+}
+
+.userSection__postDate {
+  position: absolute;
+  right: 0px;
+}
+
+ion-icon {
+  font-size: 24px;
+  padding: 10px;
+}
+.likeCount, .postDescription {
+  padding: 0px 10px
+}
+
+.postDescription {
+  list-style-type: none;
+}
+
+.createCommentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  input{
+    width: 100%;
+  }
+}

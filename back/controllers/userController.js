@@ -12,6 +12,7 @@ let register = (req, res) => {
     user.userName = data.userName;
     user.email = data.email;
     user.password = data.password;
+    user.photo = data.photo;
     user
         .save()
         .then(item => {
