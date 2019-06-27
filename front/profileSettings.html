@@ -1,84 +1,88 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Profile Settings</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/topbar.css">
-    <link rel="stylesheet" href="style/profileSettings.css">
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Profile Settings</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="style/topbar.css">
+      <link rel="stylesheet" href="style/profileSettings.css">
 
-  </head>
-  <body>
+    </head>
+    <body>
 
-    <div class="topbar">
-      <div class="container">
-        <nav class="nav-bar left">
-          <span class="logo">OZYS</span>
-         </nav>
-        <nav class="nav-bar right">
-          <button type="button" name="button" class="btn login" id="home">Home</button>
-        </nav>
+      <div class="topbar">
+        <div class="container">
+          <nav class="nav-bar left">
+            <span class="logo">OZYS</span>
+           </nav>
+          <nav class="nav-bar right">
+            <button type="button" name="button" class="btn login" id="home">Home</button>
+          </nav>
+        </div>
       </div>
-    </div>
-    <hr>
+      <hr>
 
-<div class="container">
-  <div class="profileEdit">
-      <div class="col-sm-3"><!--left col-->
-      <div class="text-center">
-        <label for="nick_name"><h5>Nick Name</h5></label>
-        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+  <div class="container">
+    <div class="profileEdit">
+        <div class="col-sm-3"><!--left col-->
+        <div class="text-center">
+          <label for="nick_name"><h5>Nick Name</h5></label>
+          <!-- <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar"> -->
+          <img id="myImg" src="#" width="100%" height="225" alt="" />
+          <input type='file' />
 
-      </div>
-        </div><!--/col-3-->
-      <div class="col-sm-9">
-          <div class="tab-content">
-            <div class="tab-pane active" id="home">
-                <hr>
-                <form>
-                  <form class="form" action="##" method="post" id="registrationForm">
-                      <div class="form-group">
+        </div>
+          </div><!--/col-3-->
+        <div class="col-sm-9">
+            <div class="tab-content">
+              <div class="tab-pane active" id="home">
+                  <hr>
+                  <form>
+                    <form class="form" action="##" method="post" id="registrationForm">
+                        <div class="form-group">
 
-                          <div class="col-xs-6">
-                              <label for="nick_name"><h5>Nick Name</h5></label>
-                              <input type="text" class="form-control" name="nick_name" id="nickName" placeholder="Nick name" title="enter your Nick name if any.">
-                          </div>
-                      </div>
-                        </div>
-                      <div class="form-group">
-
-                          <div class="col-xs-6">
-                              <label for="email"><h5>Email</h5></label>
-                              <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
-                          </div>
-                      </div>
-                      <div class="form-group">
-
-                          <div class="col-xs-6">
-                              <label for="password"><h5>Password</h5></label>
-                              <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
-                          </div>
-                      </div>
-
-
-                      <div class="form-group">
-                           <div class="col-xs-12">
-                                <br>
-                                <button type="button" id="saveSettings" class="btn btn-success">Save</button>
-                                <button type="button" id="resetSettings" class="btn btn-primary">Reset</button>
-
-
+                            <div class="col-xs-6">
+                                <label for="nick_name"><h5>Nick Name</h5></label>
+                                <input type="text" class="form-control" name="nick_name" id="nickName" placeholder="Nick name" title="enter your Nick name if any.">
                             </div>
-                      </div>
+                        </div>
+                          </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email"><h5>Email</h5></label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="password"><h5>Password</h5></label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                             <div class="col-xs-12">
+                                  <br>
+                                  <button type="button" id="saveSettings" class="btn btn-success">Save</button>
+                                  <button type="button" id="resetSettings" class="btn btn-primary">Reset</button>
+
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                        </div>
-                          </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/profileSettings.js"></script>
 
 
 
+    </body>
 
-
-  </body>
-
-</html>
+  </html>
