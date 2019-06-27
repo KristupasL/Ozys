@@ -12,8 +12,10 @@
 }
 
 .nav-bar {
-  background-color: green;
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 
 }
 
@@ -24,7 +26,7 @@
 
 .right {
   float: right;
-  line-height: 50px;
+  /* line-height: 50px; */
 }
 
 .logo {
@@ -35,10 +37,14 @@
 .login {
   background-color: #FF8000;
   color: #fff;
-} */
+}
 
 .login:hover {
   color: #fff;
   -webkit-filter: brightness(85%);
           filter: brightness(85%);
+}
+
+.item {
+  line-height: 50px;
 }
