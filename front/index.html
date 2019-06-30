@@ -15,11 +15,11 @@
          </nav>
         <nav class="nav-bar right">
           <div class="item">
-            <input class="text" placeholder="Search" aria-label="Search"/>
+            <input class="text" placeholder="Search"/>
             <button class="btn btn-outline-success" type="button">Search</button>
           </div>
           <div class="item">
-            <button type="button" name="button" class="btn login" id="logout">Log out</button>
+            <button type="button" name="button" class="btn log" id="logout">Log out</button>
           </div>
         </nav>
       </div>
@@ -34,7 +34,9 @@
               <input type="text" class="form-control create-title" id="createTitle">
             </div>
             <div class="form-group">
-              <input type="file" class="form-control-file" id="photoToPost">
+              <label for="imageUrl" class="create-title-label">Image url</label>
+              <input type="text" class="form-control" id="imageUrl">
+              <!-- <input type="file" class="form-control-file" id="photoToPost"> -->
             </div>
             <button type="button" class="btn btn-success" id="post">Post</button>
           </form>

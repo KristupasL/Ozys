@@ -18,6 +18,7 @@ function loginUser(req, res) {
             if (!res.ok) {
                 throw Error(res.statusText);
             }
+            console.log(res.headers.get('x-auth'));
             localStorage.setItem('website-x-auth-token', res.headers.get('x-auth'))
             return res.json()
         })
@@ -26,7 +27,7 @@ function loginUser(req, res) {
             location.replace("http://localhost:8080/index.html")
         })
         .catch((err) => {
-            console.log(err)
+            alert(err);
         })
 
 

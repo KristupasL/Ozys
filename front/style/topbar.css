@@ -16,17 +16,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  line-height: 50px;
 
 }
 
 .left {
   float: left;
-  line-height: 50px;
 }
 
 .right {
   float: right;
-  /* line-height: 50px; */
 }
 
 .logo {
@@ -34,7 +33,7 @@
   letter-spacing: 3px
 }
 
-.login {
+.log {
   background-color: #FF8000;
   color: #fff;
 }
@@ -46,5 +45,4 @@
 }
 
 .item {
-  line-height: 50px;
 }
