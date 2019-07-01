@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const UserModel = require('./userModel.js')
+const CommentsModel = require('./commentModel.js')
 
 
 let PostSchema = new mongoose.Schema({
@@ -7,10 +8,10 @@ let PostSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    creator: [{
+    creator: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Users'
-    }],
+    },
     likesCount: {
         type: Number,
         default: 0
@@ -23,6 +24,10 @@ let PostSchema = new mongoose.Schema({
         type: String,
         required: false
     },
+    commentsOnPost: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Comments'
+    }],
     commentsCount: {
         type: Number,
         default: 0
