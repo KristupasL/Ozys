@@ -39,8 +39,8 @@ III. Final Stretch:
     4. Make the date pretty (says 1 minute ago for newer posts and actual date for older ones)
     5. Add Profile page and Settings page
     6. Create functionality that images could be added to database
-    7. Like fetch function in index.js
-    8. comment function in index.js
+    7. Like fetch function in index.js @pasha
+    8. comment function in index.js @pasha
     9. Show all likes when pressed on the likes count
     10. show more comments when pressed on comments Count
 
