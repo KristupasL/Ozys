@@ -20,17 +20,29 @@ I. Back-end:
     13. Feed load @kristupas DONE
     14. Photo posting @kristupas DONE
     15. Liking a Photo @kristupas DONE
-    16. Commenting a photo
+    16. Commenting a photo @kristupas DONE
 
 II. Front-end:
 
-    1. Colors, Header, and general design ideas that will be implemented in pages below
+    1. Colors, Header, and general design ideas that will be implemented in pages below @Everyone DONE
     2. Register Page - @pasha DONE
     3. Login Page - @pasha DONE
     4. Main/Feed Page @Tautvydas
     5. Profile Page @Modestas
     6. Settings/Edit profile Page @Modestas
 
+III. Final Stretch:
+
+    1. Title on Feed feed
+    2. username cannot include spaces
+    3. Emails have to have @ sign
+    4. Make the date pretty (says 1 minute ago for newer posts and actual date for older ones)
+    5. Add Profile page and Settings page
+    6. Create functionality that images could be added to database
+    7. Like fetch function in index.js
+    8. comment function in index.js
+    9. Show all likes when pressed on the likes count
+    10. show more comments when pressed on comments Count
 
 To be added: Search function, Sort Function, Followers
 
