@@ -23,9 +23,17 @@ let feedLoad = (req, res) => {
         .populate('creator', 'userName photo')
         .populate({
             path: 'commentsOnPost',
+            model: 'Comments',
+            options: {
+                limit: 3,
+                sort: {
+                    date: 'desc'
+                }
+            },
             populate: {
                 path: 'creator',
-                model: 'userName'
+                model: 'Users',
+                select: 'userName photo'
             }
         })
         .then(items => {
