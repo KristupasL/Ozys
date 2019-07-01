@@ -117,14 +117,16 @@ function createPost(feedPosts) {
     postPhoto.setAttribute("width", "100%");
     postActionButtonsLike.setAttribute("id", "likeBtn");
 
-    postAuthorSectionName.textContent = value.creator[0].userName;   //posto autoriaus userName
+    postAuthorSectionName.textContent = value.creator.userName;   //posto autoriaus userName
     postAuthorSectionPostDate.textContent = value.date;   //posto autoriaus post date
     postActionButtonsLike.innerHTML = '<ion-icon name="heart-empty"></ion-icon>'    //like mygtukas
     postActionButtonsComment.innerHTML = '<ion-icon name="chatbubbles"></ion-icon>'    //comment mygtukas
     postActionButtonsShare.innerHTML = '<ion-icon name="share"></ion-icon>'    //share mygtukas
     postLikeCount.textContent = value.likesCount + ' likes';    //laiku skaicius
-    postCommentsListItemAuthorName.innerHTML = "Petras ".bold()   //posto autoriaus userName
-    postCommentsListItemAuthorComment.textContent = "nebūk ožys"   //posto autoriaus komentaras
+    postCommentsListItemAuthorName.innerHTML = value.creator.userName.bold()   //posto autoriaus userName
+    postCommentsListItemAuthorComment.textContent = " " + value.title  //posto autoriaus komentaras
+
+
     postCommentsListItem2Username2.innerHTML = "John Cena ".bold()   //posto komentatoriaus userName1
     postCommentsListItem2Username2Text2.textContent = "tu ozys"    //posto komentatoriaus komentaras1
     postCommentsListItem3Username3.innerHTML = "Chuck ".bold()   //posto komentatoriaus userName2
