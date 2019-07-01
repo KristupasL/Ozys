@@ -32,8 +32,6 @@ II. Front-end:
     6. Settings/Edit profile Page @Modestas
 
 
-
-
 To be added: Search function, Sort Function, Followers
 
 Will add more later, also feel free to add yours.
