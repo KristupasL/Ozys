@@ -9,6 +9,7 @@ let feedLoad = (req, res) => {
             commentsCount: 1,
             date: 1,
             title: 1,
+            commentsOnPost: 1,
             likesList: {
                 $elemMatch: {
                     $eq: req.user._id
@@ -20,6 +21,13 @@ let feedLoad = (req, res) => {
             date: 'desc'
         })
         .populate('creator', 'userName photo')
+        .populate({
+            path: 'commentsOnPost',
+            populate: {
+                path: 'creator',
+                model: 'userName'
+            }
+        })
         .then(items => {
             res.json(items);
         })

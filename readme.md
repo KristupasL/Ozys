@@ -26,24 +26,10 @@ II. Front-end:
 
     1. Colors, Header, and general design ideas that will be implemented in pages below
     2. Register Page - @pasha DONE
-<<<<<<< HEAD
-    3. Login Page - @pasha (DOES NOT CATCH ERROR)
-=======
     3. Login Page - @pasha DONE
-<<<<<<< HEAD
->>>>>>> edffbacd1cfa9f6ee86fce4b0fc80da9bdc17db9
-=======
-<<<<<<< HEAD
->>>>>>> 74779a59da49e7fca886d8ec6e9f883d37b8a3c7
-    4. Main/Feed Page
-    5. Profile Page @Modestas DONE 
-    6. Settings/Edit profile Page @Modestas DONE
-=======
     4. Main/Feed Page @Tautvydas
     5. Profile Page @Modestas
     6. Settings/Edit profile Page @Modestas
->>>>>>> c666cfa81f22a381762f3c9b158db1354ca22ff0
-
 
 
 To be added: Search function, Sort Function, Followers

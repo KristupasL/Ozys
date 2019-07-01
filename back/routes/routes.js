@@ -13,10 +13,10 @@ router.get('/', (request, response) => {
         timestamp: new Date().getTime()
     })
 })
-//
-// router.route('/comment')
-//     .post(commentController.comment)
-//
+
+router.route('/comment')
+    .post(middleware.authenticate, commentController.createComment)
+
 router.route('/register')
     .post(userController.register)
 

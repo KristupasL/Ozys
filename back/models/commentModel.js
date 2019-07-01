@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
+const UserModel = require('./userModel.js')
 
 let CommentSchema = new mongoose.Schema({
-    user: {
+    creator: {
         type: mongoose.Schema.Types.ObjectId,
-        required: true,
-        unique: true
+        ref: 'Users'
     },
     post: {
         type: mongoose.Schema.Types.ObjectId,
@@ -16,11 +16,11 @@ let CommentSchema = new mongoose.Schema({
     },
     likes: {
         type: Number,
-        required: true
+        required: false
     }
 
 })
-let CommentModel = mongoose.model("CommentsItems", CommentSchema)
+let CommentModel = mongoose.model("Comments", CommentSchema)
 
 
 module.exports = CommentModel
