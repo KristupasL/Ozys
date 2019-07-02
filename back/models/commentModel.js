@@ -19,8 +19,12 @@ let CommentSchema = new mongoose.Schema({
         required: false
     },
     date: {
-        type: Date,
-        default: () => new Date()
+        type: String,
+        default: () => {
+            let a = new Date()
+            let b = a.getTime()
+            return b;
+        }
     }
 })
 let CommentModel = mongoose.model("Comments", CommentSchema)

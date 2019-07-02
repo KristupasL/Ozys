@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>Register</title>
-    <link onkeypress=""rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link onkeypress="" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="style/topbar.css">
     <link rel="stylesheet" href="style/index.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="topbar">
-      <div class="container">
-        <nav class="nav-bar left">
-          <span class="logo">OZYS</span>
-         </nav>
-        <nav class="nav-bar right">
-          <div>
-            <button type="button" name="button" class="btn log" id="logout">Log out</button>
-          </div>
-        </nav>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="createPost">
-          <form>
-            <div class="form-group">
-              <label for="createTitle" class="create-title-label">New Post</label>
-              <input type="text" class="form-control create-title" id="createTitle">
-            </div>
-            <div class="form-group">
-              <label for="imageUrl" class="create-title-label">Image url</label>
-              <input type="text" class="form-control" id="imageUrl">
-              <!-- <input type="file" class="form-control-file" id="photoToPost"> -->
-            </div>
-            <button type="button" class="btn btn-success" id="post">Post</button>
-          </form>
+        <div class="container">
+            <nav class="nav-bar left">
+                <span class="logo">OZYS</span>
+            </nav>
+            <nav class="nav-bar right">
+                <div>
+                    <button type="button" name="button" class="btn log" id="logout">Log out</button>
+                </div>
+            </nav>
         </div>
-      </div>
+    </div>
 
+    <div class="container">
+        <div class="createPost center-align">
+            <form>
+                <div class="form-group">
+                    <label for="createTitle" class="create-title-label">New Post</label>
+                    <input type="text" class="form-control create-title" id="createTitle">
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl" class="create-title-label">Image url</label>
+                    <input type="text" class="form-control" id="imageUrl">
+                    <!-- <input type="file" class="form-control-file" id="photoToPost"> -->
+                </div>
+                <button type="button" class="btn btn-success" id="post">Post</button>
+            </form>
+        </div>
     </div>
     <div class="container">
-      <div class="main-feed" id="main-feed">
+        <div class="main-feed center-align" id="main-feed">
 
-      </div>
+        </div>
     </div>
-  </body>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="js/logout.js"></script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/logout.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 </html>

@@ -1,62 +1,80 @@
-.createPost {
-  margin-top: 70px;
-  width: 100%;
+.center-align {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 800px;
+    position: relative;
+    width: 60%;
 }
 
-.main-feed {
--webkit-box-flex: 1;
--ms-flex-positive: 1;
-flex-grow: 1;
-margin: 0 auto;
-margin-top: 60px;
-max-width: 800px;
-position: relative;
-width: 100%;
+.createPost {
+    padding: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
+
+.main-feed {}
 
 .post__author-section {
-  position: relative;
+    position: relative;
 }
 
 .post__author-section__postDate {
-  position: absolute;
-  right: 0px;
+    position: absolute;
+    right: 0px;
 }
 
 ion-icon {
-  margin-top: 5px;
-  font-size: 24px;
-  /* padding: 10px; */
+    margin-top: 5px;
+    font-size: 24px;
+    /* padding: 10px; */
 }
 
 .post__action-buttons__item {
-  margin: 10px;
-  border: none;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-
+    margin: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 50%;
 }
 
 .post__action-buttons__item:hover {
-  -webkit-filter: brightness(85%);
-          filter: brightness(85%);
+    -webkit-filter: brightness(85%);
+    filter: brightness(85%);
 }
 
 .post__like-count {
-  padding: 0px 10px
+    padding: 0px 10px
 }
 
 .post__comments__list {
-  list-style-type: none;
-  padding: 0px;
+    list-style-type: none;
+    padding: 0px;
 }
 
 .post__comments {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
-  input{
-    width: 100%;
-  }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+}
+
+.post__create-comment-section__button {
+    background-color: #FF8000;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+}
+
+.post__create-comment-section__input {
+    border: 0;
+    border-bottom: 1px solid #FF8000;
+    margin-right: 5px;
+    margin-left: -1px;
+}
+
+.post__create-comment-section__input:focus {
+    outline: none;
 }

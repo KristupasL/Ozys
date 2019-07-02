@@ -33,7 +33,7 @@ II. Front-end:
 
 III. Final Stretch:
 
-    1. Title on Feed feed
+    1. Title on Feed feed DONE
     2. username cannot include spaces
     3. Emails have to have @ sign
     4. Make the date pretty (says 1 minute ago for newer posts and actual date for older ones)

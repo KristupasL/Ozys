@@ -1,48 +1,46 @@
 .topbar {
-  width: 100%;
-  position: fixed;
-  top : 0;
-  left: 0;
-  padding: 0 10px;
-  z-index: 999;
-  background-color: #e1e1e1;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    z-index: 999;
+    background-color: #e1e1e1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .nav-bar {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 50px;
-
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 50px;
 }
 
 .left {
-  float: left;
+    float: left;
 }
 
 .right {
-  float: right;
+    float: right;
 }
 
 .logo {
-  font-weight: 800;
-  letter-spacing: 3px
+    font-weight: 800;
+    letter-spacing: 3px
 }
 
 .log {
-  background-color: #FF8000;
-  color: #fff;
+    background-color: #FF8000;
+    color: #fff;
 }
 
 .login:hover {
-  color: #fff;
-  -webkit-filter: brightness(85%);
-          filter: brightness(85%);
+    color: #fff;
+    -webkit-filter: brightness(85%);
+    filter: brightness(85%);
 }
 
-.item {
-}
+.item {}

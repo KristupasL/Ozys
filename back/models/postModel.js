@@ -34,7 +34,11 @@ let PostSchema = new mongoose.Schema({
     },
     date: {
         type: Date,
-        default: () => new Date()
+        default: () => {
+            let a = new Date()
+            let b = a.getTime()
+            return b;
+        }
     }
 })
 
