@@ -76,61 +76,63 @@ function createPost(feedPosts) {
     let postActionButtonsComment = document.createElement('button')
     let postActionButtonsShare = document.createElement('button')
     let postLikeCount = document.createElement('div')
+
+    let postTitle = document.createElement('div')
+    let postTitleAuthorName = document.createElement('span')
+    let postTitleAuthorComment = document.createElement('span')
+
     let postComments = document.createElement('div')
     let postCommentsList = document.createElement('ul')
-    let postCommentsListItem = document.createElement('li')
-    let postCommentsListItemAuthorName = document.createElement('span')
-    let postCommentsListItemAuthorComment = document.createElement('span')
-    let postCommentsListItem2 = document.createElement('li')
-    let postCommentsListItem2Username2 = document.createElement('span')
-    let postCommentsListItem2Username2Text2 = document.createElement('span')
-    let postCommentsListItem3 = document.createElement('li')
-    let postCommentsListItem3Username3 = document.createElement('span')
-    let postCommentsListItem3Username3Text3 = document.createElement('span')
+
     let postCreateComment = document.createElement('div')
     let postCreateCommentInput = document.createElement('input')
     let postCreateCommentButton = document.createElement('button')
 
+    //class add section
     post.classList.add('post', 'list-group-item')   //cia klase uzdeta tik del css borderio, kad graziau atrodytu
     postAuthorSection.classList.add('post__author-section')
     postAuthorSectionLogo.classList.add('post__author-section__logo')
     postAuthorSectionName.classList.add('post__author-section__name')
     postAuthorSectionPostDate.classList.add('post__author-section__postDate')
     postActionButtons.classList.add('post__action-buttons')
-    postActionButtonsLike.classList.add('post__action-buttons__item')
-    postActionButtonsLike.classList.add('like')
-    postActionButtonsComment.classList.add('post__action-buttons__item')
-    postActionButtonsComment.classList.add('comment')
-    postActionButtonsShare.classList.add('post__action-buttons__item')
-    postActionButtonsShare.classList.add('share')
+    postActionButtonsLike.classList.add('post__action-buttons__item', 'like')
+    postActionButtonsComment.classList.add('post__action-buttons__item', 'comment')
+    postActionButtonsShare.classList.add('post__action-buttons__item', 'share')
     postLikeCount.classList.add('post__like-count')
+
+    postTitle.classList.add('post__title')
+    postTitleAuthorName.classList.add('post__title__author')
+    postTitleAuthorComment.classList.add('post__title__comment')
+
     postComments.classList.add('post__comments')
     postCommentsList.classList.add('post__comments__list')
-    postCommentsListItem.classList.add('post__comments__list__item')
+
+
     postCreateComment.classList.add('post__create-comment-section', 'col', 'col-md-8')
     postCreateCommentInput.classList.add('post__create-comment-section__input')
     postCreateCommentButton.classList.add('post__create-comment-section__button')
 
+    // atribute section
     postAuthorSectionLogo.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzgv1fJtdWd-9_XAxYs5LeMewuX5USnZZ432pPfdmVGd5_9N6hSQ"); //posto autoriaus logo
     postAuthorSectionLogo.setAttribute("height", "50");
     postPhoto.setAttribute("src", value.photo);   //posto autoriaus posto nuotrauka
     postPhoto.setAttribute("width", "100%");
-    postActionButtonsLike.setAttribute("id", "likeBtn");
 
+    // text content section
     postAuthorSectionName.textContent = value.creator.userName;   //posto autoriaus userName
     postAuthorSectionPostDate.textContent = value.date;   //posto autoriaus post date
     postActionButtonsLike.innerHTML = '<ion-icon name="heart-empty"></ion-icon>'    //like mygtukas
     postActionButtonsComment.innerHTML = '<ion-icon name="chatbubbles"></ion-icon>'    //comment mygtukas
     postActionButtonsShare.innerHTML = '<ion-icon name="share"></ion-icon>'    //share mygtukas
     postLikeCount.textContent = value.likesCount + ' likes';    //laiku skaicius
-    postCommentsListItemAuthorName.innerHTML = value.creator.userName.bold()   //posto autoriaus userName
-    postCommentsListItemAuthorComment.textContent = " " + value.title  //posto autoriaus komentaras
-    postCommentsListItem2Username2.innerHTML = "John Cena ".bold()   //posto komentatoriaus userName1
-    postCommentsListItem2Username2Text2.textContent = "tu ozys"    //posto komentatoriaus komentaras1
-    postCommentsListItem3Username3.innerHTML = "Chuck ".bold()   //posto komentatoriaus userName2
-    postCommentsListItem3Username3Text3.textContent = "lopas"    //posto komentatoriaus komentaras2
+
+    postTitleAuthorName.innerHTML = value.creator.userName.bold()   //posto autoriaus userName
+    postTitleAuthorComment.textContent = " " + value.title  //posto autoriaus komentaras
+
     postCreateCommentButton.textContent = "Post"
 
+
+    //append section
     feed.appendChild(post)
     post.appendChild(postAuthorSection)
     postAuthorSection.appendChild(postAuthorSectionLogo)
@@ -142,24 +144,78 @@ function createPost(feedPosts) {
     postActionButtons.appendChild(postActionButtonsComment)
     postActionButtons.appendChild(postActionButtonsShare)
     post.appendChild(postLikeCount)
-    post.appendChild(postComments)
+
+    post.appendChild(postTitle)
+    postTitle.appendChild(postTitleAuthorName)
+    postTitle.appendChild(postTitleAuthorComment)
+
+
+
+    console.log(value.commentsOnPost);
+    value.commentsOnPost.forEach((val, idx) => {
+      let postCommentsListItem = document.createElement('li')
+      let postCommentsListItemUsername = document.createElement('span')
+      let postCommentsListItemUsernameText = document.createElement('span')
+
+      postCommentsListItem.classList.add('post__comments__list__item')
+
+      postCommentsListItemUsername.innerHTML = val.creator.userName.bold()   //posto komentatoriaus userName1
+      postCommentsListItemUsernameText.textContent = " " + val.comment    //posto komentatoriaus komentaras1
+
+
+      postCommentsListItem.appendChild(postCommentsListItemUsername)
+      postCommentsListItem.appendChild(postCommentsListItemUsernameText)
+      postCommentsList.appendChild(postCommentsListItem)
+    })
+
     postComments.appendChild(postCommentsList)
-    postCommentsList.appendChild(postCommentsListItem)
-    postCommentsList.appendChild(postCommentsListItem2)
-    postCommentsList.appendChild(postCommentsListItem3)
-    postCommentsListItem.appendChild(postCommentsListItemAuthorName)
-    postCommentsListItem.appendChild(postCommentsListItemAuthorComment)
-    postCommentsListItem2.appendChild(postCommentsListItem2Username2)
-    postCommentsListItem2.appendChild(postCommentsListItem2Username2Text2)
-    postCommentsListItem3.appendChild(postCommentsListItem3Username3)
-    postCommentsListItem3.appendChild(postCommentsListItem3Username3Text3)
+    post.appendChild(postComments)
+
+
     post.appendChild(postCreateComment)
     postCreateComment.appendChild(postCreateCommentInput)
     postCreateComment.appendChild(postCreateCommentButton)
 
     postActionButtonsLike.addEventListener('click', function() {
-      alert('here');
-    })
+      fetch(`http://localhost:3000/api/like/${value._id}`, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'x-auth': token
+        }
+      })
+      .then(res => {
+        getFeedLoad();
+      })
+      .catch(err =>{
+        console.log(err);
+      })
+    });
 
-  })
+    postCreateCommentButton.addEventListener('click', function() {
+
+      fetch('http://localhost:3000/api/comment', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'x-auth': token
+        },
+        body: JSON.stringify({
+          comment: postCreateCommentInput.value,
+          post: value._id
+        })
+      })
+      .then(res => {
+        getFeedLoad();
+      })
+      .catch(err =>{
+        console.log(err);
+      })
+
+    });
+
+
+  });
 };
